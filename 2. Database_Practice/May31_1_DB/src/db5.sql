@@ -18,10 +18,4 @@
 -- 그럼 PK를 어디에 ???
 -- 번호값을 만들어서 여기에 PK를 주는 것도 한 방법 !
 
-create table may31_snack(
-	s_no number(4) primary key,
-	s_name varchar2(10 char) not null,
-	s_maker varchar2(10 char) not null,
-	s_price number(5) not null
-);
 
