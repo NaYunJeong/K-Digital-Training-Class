@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "insang";
+	src: url("insang.ttf");
+}
+
+#joinTbl {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: pink;
+	font-family: "insang";
+	font-size: 15pt;
+	border-radius: 8px;
+	box-shadow: black 5px 5px 20px;
+}
+
+.joinTd {
+	font-size: 25pt;
+	font-weight: 600;
+	text-shadow: white 3px 5px 5px;
+}
+
+.td1 {
+	margin-bottom: 20px
+}
+
+.textType {
+	margin-bottom: auto;
+	outline: none;
+	text-align: center;
+	border: white solid 3px;
+	border-radius: 10px;
+	background-color: transparent;
+	color: teal;
+	font-size: 13pt;
+	font-weight: 600;
+	font-family: "insang";
+}
+
+#joinTbl .textType:focus {
+	border-bottom: black dashed 3px;
+}
+
+#joinTbl .textType::placeholder {
+	color: white;
+}
+
+#joinTbl .radioTd {
+	color: black;
+	height: 25px;
+	width: 200px;
+}
+
+#joinTbl select {
+	border: none;
+	background-color: transparent;
+	font-size: 15pt;
+	font-family: "insang";
+	outline: none;
+	padding-left: 20px;
+}
+
+#joinTbl select option {
+	background-color: lightblue;
+	color: #fff;
+	padding: 3px 0;
+}
+
+#joinTbl textarea {
+	resize: none;
+	background-color: transparent;
+	border: white solid 3px;
+	border-radius: 10px;
+	width: 90%;
+	height: 70px;
+	outline: none;
+	font-family: "insang";
+	font-size: 13pt;
+	color: teal;
+}
+
+#joinTbl button {
+	border: none;
+	background-color: transparent;
+	color: black;
+	font-size: 15pt;
+	font-family: "insang";
+	cursor: pointer;
+}
+
+#joinTbl button:hover {
+	text-decoration: underline;
+	color: #fff;
+}

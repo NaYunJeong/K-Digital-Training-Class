@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/input.css">
+</head>
+<body>
+
+	<!-- 
+		<< 회원가입 페이지 >>
+		ID
+		PW
+		성별
+		지역
+			<select>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>
+		취미 (복수 선택 가능)
+		자기소개 (textarea) + CSS까지 이쁘게
+		가입버튼 누르면 => 입력한 정보들이 새로운 페이지에 뜨게 (Servlet)
+	 -->
+	 <form action="Output" method="post">
+	 	<table id="joinTbl">
+	 		<tr>
+	 			<td colspan="2" align="center" class="joinTd">회원가입</td>
+	 		</tr>
+	 		<tr>
+	 			<td align="center" class="td1">ID</td>
+	 			<td>
+	 				<input autofocus="autofocus" autocomplete="off"
+	 				placeholder="필수, 4 ~ 8자" name="ID"
+	 				required="required" class="textType">
+	 			</td>
+	 		</tr>
+	 		<tr>
+	 			<td align="center" class="td1">PW</td>
+	 			<td>
+	 				<input autocomplete="off" placeholder="필수, 영문/숫자혼합" 
+	 				type="password" name="PW" required="required" class="textType">
+	 			</td>
+	 		</tr>
+	 		<tr>
+	 			<td align="center" class="td1">성별</td>
+	 			<td align="center" class="radioTd">
+	 				<input type="radio" checked="checked" name="GD" value="남성">남성
+	 				<input type="radio" name="GD" value="여성">여성
+	 				<input type="radio" name="GD" value="기타">기타
+	 			</td>
+	 		</tr>
+	 		<tr>
+	 			<td align="center" class="td1">지역</td>
+	 			<td>
+	 				<select name="LC" class="radioTd">
+	 					<option disabled selected>거주 지역</option>
+	 					<option>서울</option>
+	 					<option>경기</option>
+	 					<option>인천</option>
+	 					<option>강원</option>
+	 					<option>충북</option>
+	 					<option>충남</option>
+	 					<option>전북</option>
+	 					<option>전남</option>
+	 					<option>경북</option>
+	 					<option>경남</option>
+	 					<option>제주</option>
+	 				</select>
+	 			</td>
+	 		</tr>
+	 		<tr>
+	 			<td align="center" class="td1">취미</td>
+	 			<td align="center">
+	 				<input type="checkbox" value="게임" name="HB">게임
+	 				<input type="checkbox" value="골프" name="HB">골프
+	 				<input type="checkbox" value="운동" name="HB">운동<br>
+	 				<input type="checkbox" value="SNS" name="HB">SNS
+	 				<input type="checkbox" value="맛집탐방" name="HB">맛집탐방
+	 				<input type="checkbox" value="방콕" name="HB">방콕
+	 			</td>
+	 		</tr>
+	 		<tr>
+	 			<td align="center" class="td1">자기소개</td>
+	 			<td>
+	 				<textarea name="IND"></textarea>
+	 			</td>
+	 		</tr>
+	 		<tr>
+	 			<td align="center" colspan="2">
+	 				<button>가입</button>
+	 			</td>
+	 		</tr>
+	 	</table>
+	 </form>
+	 <!-- My
+	 <h2><< 회원가입 페이지 >></h2> <hr>
+	 * ID : <input name="id"> <br><br>
+	 * PW : <input name="pw" type="password"> <br><br>
+	 * 성별 : <input name="gender" type="radio" value="남성">남성 
+	 		<input name="gender" type="radio" value="여성">여성 <br><br>
+	 * 지역 : <select name="location"> <br><br>
+				<option>강남구</option>	 
+				<option>강동구</option>	 
+				<option>광진구</option>	 
+				<option>성동구</option>	 
+				<option>송파구</option>
+	 		</select>
+	 		<br><br>
+	 * 취미 : <input name="hobby" type="checkbox" value="영화관람">영화관람	
+	 		<input name="hobby" type="checkbox" value="맛집방문">맛집방문
+	 		<input name="hobby" type="checkbox" value="운동">운동
+	 		<input name="hobby" type="checkbox" value="스포츠관람">스포츠관람	
+	 		<input name="hobby" type="checkbox" value="여행">여행	
+	 		<input name="hobby" type="checkbox" value="음악감상">음악감상	
+	 		<hr>
+	 * 자기소개 <br>
+	 	<textarea name="introduce" cols="30" rows="5"></textarea> <br>
+	 <button>가입</button> <br><br>
+	 </form>
+	  -->
+</body>
+</html>
