@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/NayunValidChecker.js"></script>
+<script type="text/javascript" src="js/validCheck.js"></script>
+<link rel = "stylesheet" href="V3.css">
+</head>
+<body>
+	
+	<form action="HomeController" method="post" enctype="multipart/form-data" 
+		name="bmiForm" onsubmit="return bmiCheck();">
+		<table id="bmiTbl">
+			<tr>
+				<th align="center">BMI 검사</th>
+			</tr>
+			<tr>
+				<td class="td1">이름</td>
+				<td>
+					<input name="name" placeholder="필수" class="textType"
+						maxlength="10" autofocus="autofocus" autocomplete="off">
+				</td>
+			</tr>
+			<tr>
+				<td class="td2">키(cm)</td> 
+				<td>
+					<input name="height">
+				</td>
+			</tr>
+			<tr>
+				<td class="td3">몸무게(kg)</td>
+				<td>
+					<input name="weight">
+				</td>
+			</tr>
+			<tr>
+				<td class="td4">사진</td>
+				<td>
+					<input type="file" name="photo">
+				</td>
+			</tr>
+			<tr>
+				<td align="center"><button>계산하기</button></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

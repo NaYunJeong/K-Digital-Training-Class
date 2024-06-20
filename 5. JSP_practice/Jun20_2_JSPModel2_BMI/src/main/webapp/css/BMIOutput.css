@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "Insang";
+	src: url("Insang.ttf");
+}
+
+boby {
+	background-image: url("dog.jpg");
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#resultTbl {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	background-color: pink;
+	width: 500px;
+	height: 500px;
+	border: white solid 5px;
+	border-radius: 10px;	
+}
+
+#resultTbl th {
+	font-size: 25pt;
+	color: lime;
+}
+
+#resultTbl.td3 th {
+	font-size: 25pt;
+	color: lime;
+}
+
+
+#bmiTbl {
+	background-color: pink;
+}
+
+#bmiTbl th {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "insang";
+	font-size: 30pt;
+	text-shadow: gray 3px 5px 5px;
+}
