@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "insang";
+	src: url("insang.ttf");
+}
+
+body {
+	font-family: "insang";
+	background-color: #c0e7fe;
+	background-size: 100px;
+}
+
+#hjTbl th {
+	font-size: 80pt;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+}
+
+.td1 {
+	font-family: "insang";
+	font-size: 30pt;
+}
+
+button {
+	font-family: "insang";
+	background-color: transparent;
+	font-size: 20pt;
+}
+
+
+
