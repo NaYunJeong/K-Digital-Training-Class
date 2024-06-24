@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "insang";
+	src: url("insang.ttf");
+}
+
+body {
+	background-image: url("baseball.jpg");
+	background-repeat: repeat-y;
+	background-position: center;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#nbTble {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	font-family: "insang";
+	color: white;
+}
+
+input {
+	border: white solid 3px;
+	border-radius: 10px;
+	font-family: "insang";
+	font-size: 20pt;
+	outline: none;
+	text-align: center;
+	background-color: transparent;
+	color: white;
+	width: 100%;
+	height: 40px;
+}
+
+input::focus {
+	outline: none;
+}
+
+#nbTbl th {
+	font-family: "insang";
+	font-size: 60pt;
+	text-shadow: pink 3px 3px 5px;
+	height: 100px;
+}
+
+#nbTbl .tbl {
+	font-family: "insang";
+	font-size: 20pt;
+	color: #004000;
+	text-shadow: white 3px 3px 5px;
+}
+
+button {
+	width: 400px;
+	height: 40px;
+	background-color: transparent;
+	font-size: 15pt;
+	font-family: "insang";
+	color: black;
+	border-color: black;
+}
+
