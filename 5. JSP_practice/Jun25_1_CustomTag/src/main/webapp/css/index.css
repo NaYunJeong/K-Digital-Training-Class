@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "insang";
+	src: url("insang.ttf");
+}
+
+body {
+	font-family: "insang";
+	background-image: url("check.jpg");
+	background-position: center;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#siteTitle th {
+	font-family: "insang";
+	font-size: 50pt;
+}
+
+#siteMenu {
+	border-top: black solid 3px;
+	border-bottom: black solid 3;
+}
+
+#siteMenu a {
+	font-family: "insang";
+	color: black;
+	font-size: 25pt; 
+	font-weight: 500;
+}
+
+
