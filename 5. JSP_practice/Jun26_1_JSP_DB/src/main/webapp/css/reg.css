@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "insang";
+	src: url("insang.ttf");
+}
+
+#regTbl {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "insang";
+	font-size: 30pt;
+	color: #b5b5ff;
+}
+
+input {
+	width: 270px;
+	font-family: "insang";
+	font-size: 18pt;
+}
+
+button {
+	width: 400px;
+	height: 40px;
+	background-color: transparent;
+	font-size: 15pt;
+	font-family: "insang";
+	color: black;
+	border-color: black;
+}
+
