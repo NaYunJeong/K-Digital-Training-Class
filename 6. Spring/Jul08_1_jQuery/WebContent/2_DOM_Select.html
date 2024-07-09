@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	td {
+		height: 100px;
+	}
+	
+	input {
+		height: 50px;
+	}
+	
+	button {
+		width: 100px;
+		height: 50px;
+	}
+</style>
+<script type="text/javascript" src="jQuery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		// alert('asdf');
+		
+		$("button").click(function asdf() {
+			// $(this) : 클릭이벤트 발생함수인 asdf()를 호출한 장본인
+			//		누른 버튼만 해당하는 명령을 실행하도록 제어
+			
+			$(this).css("background-color", "red");
+			
+			// 누른 버튼이 있는 td에 배경색 주기
+			// $("td").css("background-color", "teal");  // (X)
+			// parent() : 내가 누른 this의 한단계 상위 객체 (<td>가 <button>을 품고있으므로 한 단계 상위로 올라가야함)
+			//	cf) 그 반대로는 children()
+			$(this).parent().css("background-color", "teal");
+		
+			// 눌러진 버튼이 있는 table의 테두리를 파란색으로 
+			// $(this).parent().parent().parent().parent().css("border", "blue solid 3px");
+			// parent() 4번 => html특성상 tr상위에 <tbody>를 스스로 만듦 => 따라서 한번더 상위를 해줘야함
+			// closest("CSS선택자") : 상위에 있는 것 중에서 가장 가까운 CSS선택자
+			$(this).closest("table").css("border", "blue solid 3px");
+			//	cf) 특정한 선택자 찾기 : find() : 하위객체 중에서 특정한(CSS선택자) 것
+		});
+		
+		
+		$("td").click(function() {
+			// td를 클릭했을 때 눌려진 td의 배경색을 노란색
+			$(this).css("background-color", "yellow");
+			
+			// td를 클릭했을 때 그 td속에 들어있는 모든것들의 배경색을 핑크색
+			// children() : 내가 누른 td의 하위 객체들 전부 다
+			$(this).children().css("background-color", "pink");
+			
+			// td를 클릭했을 때 그 td속에 들어있는 버튼의 테두리색을 빨간색
+			// find("CSS선택자") : 하위 객체 중에서 특정한 것
+			$(this).find("button").css("border", "red solid 3px");
+		});
+		
+		// input에 쓴 글자가 (입력하고 버튼 눌렀을 때) 그 버튼의 글자색이 되도록
+		$("button").click(function() {
+			// 버튼 클릭했을 때, input의 값을 받아올 수 있어야 함
+			// 아직 동일선상에 있는 객체를 받아오는 것을 배우지 못함 => 상위로 갔다가 다시 하위로 접근
+			// let c = $("this").parent().find("input").val();
+			
+			// siblings() : 동일선상에 있는 특정 선택자
+			let c = $(this).siblings("input").val();
+			// alert(c);
+			$(this).css("color", c);
+		});
+	});
+</script>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<td>
+				<input> <button>11111111111</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input> <button>22222222222</button>
+			</td>
+		</tr>
+	</table>
+	<table border="1">
+		<tr>
+			<td>
+				<input> <button>33333333333</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input> <button>44444444444</button>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
